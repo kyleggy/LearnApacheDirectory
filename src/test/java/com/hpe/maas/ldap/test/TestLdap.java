@@ -9,6 +9,7 @@ import org.junit.Test;
 public class TestLdap {
     LearnApacheDirectory learnApacheDirectory = new LearnApacheDirectory();
 
+
     @Test
     public void testConnection() {
         learnApacheDirectory.connectionLdap();
@@ -17,7 +18,31 @@ public class TestLdap {
     @Test
     public void testConfigureConnectLdap() {
         learnApacheDirectory.configureConnectLdap();
+    }
 
+    @Test
+    public void testConnectionADWin2008() {
+        learnApacheDirectory.connectADWin2008Ldap();
+    }
+
+    @Test
+    public void testSearchDN() {
+        learnApacheDirectory.searchDN();
+    }
+
+    @Test
+    public void testSearchRequest() {
+        learnApacheDirectory.searchRequest();
+    }
+
+    @Test
+    public void testSearchDeleteAndDisableRequest() {
+        learnApacheDirectory.searchDeleteAndDisableRequest();
+    }
+
+    @Test
+    public void testSearchAD2012() {
+        learnApacheDirectory.testSearchAD2012();
     }
 
 }
